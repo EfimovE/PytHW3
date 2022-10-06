@@ -4,15 +4,12 @@
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
 
-from turtle import position
-
-
 def myList (num):          # метод создания списка (рандом)
     import random
     myList = []
     for i in range (num):
         myList.append (random.randint (- 10, 10))
-    print(myList)
+    # print(myList)
     return myList
 
 def sumOddPositions (list):
@@ -23,7 +20,7 @@ def sumOddPositions (list):
         if (i % 2 != 0):
             sum += list[i]
             positionList.append(list[i])
-    print (positionList)
+    # print (positionList)
     print (f'{list_res} -> на нечётных позициях {positionList}, ответ: {sum}')
 
 number = int (input("Введите количество элементов списка: "))
